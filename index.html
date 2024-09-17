@@ -140,7 +140,7 @@
             transform: scale(1.2);
         }
 
-        #joinButton {
+        #joinButton, #buyButton {
             padding: 8px 16px;
             font-size: 14px;
             cursor: pointer;
@@ -149,9 +149,10 @@
             border: none;
             border-radius: 10px;
             transition: background 0.3s ease, transform 0.2s ease;
+            margin-top: 10px;
         }
 
-        #joinButton:hover {
+        #joinButton:hover, #buyButton:hover {
             background: #2ecc71;
             transform: scale(1.05);
         }
@@ -225,6 +226,10 @@
 
             <h1> JOIN CANVA PRO FOR FREE! </h1>
             <button id="joinButton">Join Now</button>
+
+            <!-- Buy Now Section -->
+            <h3>If free not available, you can buy at a cheap price</h3>
+            <button id="buyButton">Buy Now</button>
         </div>
 
         <div class="ad-container right">
@@ -249,31 +254,13 @@
             // Open the Canva join URL in a new tab
             window.open(canvaJoinUrl, '_blank');
         });
-    </script>
 
-    <!--
-    <script>
-        document.getElementById('joinButton').addEventListener('click', function () {
-            // Replace the URL with the Canva join URL
-            var canvaJoinUrl = 'https://www.canva.com/brand/join?token=4ZvEjvwhCqR1Dr6zB5fBIA&brandingVariant=edu&referrer=team-invite';
-
-            // Open the Canva join URL in a new tab
-            window.open(canvaJoinUrl, '_blank');
+        document.getElementById('buyButton').addEventListener('click', function () {
+            // Replace the URL with the buy page URL
+            var buyUrl = 'https://m.me/elitekamrul'; // Replace with actual buy page
+            window.open(buyUrl, '_blank');
         });
     </script>
-    -->
-
-        <!--
-    <script>
-        document.getElementById('joinButton').addEventListener('click', function () {
-            // Replace the URL with the Canva join URL
-            var canvaJoinUrl = 'https://www.canva.com/brand/join?token=pS7FkPAhir9xZJOdhxa34w&brandingVariant=edu&referrer=team-invite';
-
-            // Open the Canva join URL in a new tab
-            window.open(canvaJoinUrl, '_blank');
-        });
-    </script>
-    -->
 
 </body>
 
